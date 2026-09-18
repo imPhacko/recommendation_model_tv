@@ -24,10 +24,10 @@ Full results, plots, and commentary (in Lithuanian) are in [`telia_movies_result
 
 - `telia_movies_task.ipynb` — EDA, cleaning, and dataset analysis
 - `basic_recommendation_system.ipynb` — keyword vectorization, user-profile recommender, clustering
-- `movies_dataset/` — raw source CSVs (metadata, keywords, ratings)
-- `cleaned_duomenys.csv`, `movies_with_keywords.csv` — intermediate cleaned/merged datasets
 
-> **Note on repo size**: the raw and intermediate CSVs are committed directly (~80MB total) for full reproducibility without a separate download step. If a leaner clone matters more than that, these could be moved to Git LFS or regenerated from a data-download script instead.
+## Data
+
+Not committed to the repo (kept it lean instead). The notebooks expect "The Movies Dataset" (search for it on Kaggle) unzipped into `movies_dataset/`, providing `movies_metadata.csv`, `keywords.csv`, and `ratings.csv`. `cleaned_duomenys.csv` and `movies_with_keywords.csv` are intermediate files the notebooks generate from those.
 
 ## Usage
 
